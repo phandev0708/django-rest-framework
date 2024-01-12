@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Đây là template hello wolrd của {{title}}</h1>
+    <p>Đây là nội dung của template</p>
+    <p> Tôi là<b> {{ name }} </b></p>
+    <h2>Các mục cần nghiên cứu là:</h2>
+    <ul>
+        {% for item in items %}
+            {% if item != "all" %}
+                <li>{{ item }}</li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+</body>
+</html>
